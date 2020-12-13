@@ -21,8 +21,6 @@ class Person:
 
 
 
-#print(wuefeln())
-
 
 
 
@@ -56,7 +54,7 @@ def game():
             print(wuerfel)
             
         print("Summe der Punkte", player[rounde-1].punkte)
-        elif player[rounde-1].punkte == 9:
+        if player[rounde-1].punkte == 9:
             print("Du hast verloren")
             player.remove(player[rounde-1])
             rounde -= 1
