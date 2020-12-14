@@ -4,6 +4,7 @@ __author__ = "7396443, Almuhammad"
 import random
 
 def wuefeln():
+    """rtuzutzizu"""
     x = random.randint(1,6)
     return x
 
@@ -11,6 +12,7 @@ def wuefeln():
 
 
 class Person:
+    """rkjrhtre"""
     def __init__(self, name):
         self.name = name
         self.punkte = 0
@@ -36,7 +38,7 @@ for i in range(1, anzahl_der_spieler+1):
 
 
 def game():
-
+    """zrtzurzizu"""
     rounde = 1
     while len(player) != 1:
         if rounde == len(player):
@@ -44,9 +46,11 @@ def game():
         print("Spieler ", player[rounde-1].name, "am Zug")
         anzahl_der_wuerfeln = int(input("Wie oft möchtest du würfeln: "))
         for i in range(anzahl_der_wuerfeln):
+            #
             wuerfel = wuefeln()
             player[rounde-1].sum(wuerfel)
             print(wuerfel)
+          
         if player[rounde-1].punkte == 10:
             print("Du hast eine 10 dann du musst nochmal würfeln")
             wuerfel = wuefeln()
